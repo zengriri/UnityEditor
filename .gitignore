@@ -1,2 +1,6 @@
 Library/
 Temp/
+project/.vs/project/v15/Server/sqlite3/db.lock
+project/.vs/project/v15/Server/sqlite3/storage.ide
+project/.vs/project/v15/Server/sqlite3/storage.ide-shm
+project/.vs/project/v15/Server/sqlite3/storage.ide-wal
