@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
-public class EditorWindowDemo : MonoBehaviour
+public class EditorWindowDemo : EditorWindow
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    static EditorWindowDemo exampleWindow;
 
-    // Update is called once per frame
-    void Update()
+    [MenuItem("Window/EditorWindowDemo")]
+    static void Open()
     {
-        
+        //var exampleWindow = CreateInstance<EditorWindowDemo>();
+        //exampleWindow.Show();
+
+        //GetWindow<EditorWindowDemo>(typeof(SceneView));
+
+        //GetWindow<EditorWindowDemo>();
+
+        if (exampleWindow == null)
+        {
+            exampleWindow = CreateInstance<EditorWindowDemo>();
+        }
+        exampleWindow.ShowUtility();
+
     }
 }
