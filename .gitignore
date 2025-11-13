@@ -6,3 +6,4 @@ project/obj
 project/project.sln
 project/obj/Debug/Assembly-CSharp.dll
 project/obj/Debug/Assembly-CSharp.pdb
+/project/Logs

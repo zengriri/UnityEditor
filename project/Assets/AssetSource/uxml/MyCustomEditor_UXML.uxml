@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/toolkit/test.uss?fileID=7433441132597879392&amp;guid=cb22d6bde10e9c246904774614c1a555&amp;type=3#test" />
+    <CardElement />
+    <CardElement />
+    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" class="red" />
+    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+    <ui:VisualElement tooltip="54555" style="flex-grow: 1;" />
+</ui:UXML>

@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:MultiColumnListView fixed-item-height="20">
+        <ui:Columns>
+            <ui:Column name="name" title="Name" width="80" />
+            <ui:Column name="populated" title="Populated?" width="80" />
+        </ui:Columns>
+    </ui:MultiColumnListView>
+</ui:UXML>

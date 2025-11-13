@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/toolkit/plantList.uss?fileID=7433441132597879392&amp;guid=bdf32e3bf13b2b14bad759d0d4eb210b&amp;type=3#plantList" />
+    <ui:ListView style="justify-content: center;" />
+</ui:UXML>

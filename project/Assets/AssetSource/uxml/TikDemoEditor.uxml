@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Label tabindex="-1" text="These controls were created in UI Builder." parse-escape-sequences="true" display-tooltip-when-elided="true" />
+    <ui:Button text="This is button1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="button1" style="opacity: 1; transition-property: all; transition-duration: 0s; transition-timing-function: ease; transition-delay: 0s;" />
+    <ui:Toggle label="Number?" name="toggle1" />
+</ui:UXML>
