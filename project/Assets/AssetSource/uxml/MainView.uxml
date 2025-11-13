@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
-    <Style src="project://database/Assets/Editor/toolkit/uxml/MainView.uss?fileID=7433441132597879392&amp;guid=522193ec626fc674daa023d6ea9eab4d&amp;type=3#MainView" />
+    <Style src="project://database/Assets/AssetSource/uss/MainView.uss?fileID=7433441132597879392&amp;guid=522193ec626fc674daa023d6ea9eab4d&amp;type=3#MainView" />
     <ui:VisualElement name="background">
-        <ui:VisualElement name="main-container" style="flex-direction: row;">
+        <ui:VisualElement name="main-container" style="flex-direction: row; height: 350px;">
             <ui:ListView focusable="true" name="character-list" />
             <ui:VisualElement name="right-container">
                 <ui:VisualElement name="details-container">
