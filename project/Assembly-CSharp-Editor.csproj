@@ -56,10 +56,12 @@
     <Compile Include="Assets\Editor\toolkit\PlanetsMultiColumnTreeView.cs" />
     <Compile Include="Assets\Editor\EditorGUIDemo.cs" />
     <Compile Include="Assets\Editor\toolkit\PlanetsListView.cs" />
+    <Compile Include="Assets\Editor\toolkit\ToggleExample.cs" />
     <Compile Include="Assets\Editor\EventCallBackDemo.cs" />
     <Compile Include="Assets\Editor\PreviewExampleInspector.cs" />
     <Compile Include="Assets\Editor\toolkit\ObjectVsPropertyExample.cs" />
     <Compile Include="Assets\Editor\toolkit\PlanetsMultiColumnListView.cs" />
+    <Compile Include="Assets\Editor\toolkit\PopupExample.cs" />
     <Compile Include="Assets\Editor\ExamplePupupContent.cs" />
     <Compile Include="Assets\Editor\reorderableDemoEditor.cs" />
     <Compile Include="Assets\Editor\toolkit\AdvancedToolkitWindow.cs" />
@@ -72,6 +74,8 @@
     <Compile Include="Assets\Editor\ExampleDrawer.cs" />
     <Compile Include="Assets\Editor\IHasCustomMenuDemo.cs" />
     <Compile Include="Assets\Editor\toolkit\PlanetsWindow.cs" />
+    <Compile Include="Assets\Editor\toolkit\PopupContentExample.cs" />
+    <Compile Include="Assets\Editor\toolkit\ScrollViewExample.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Toggle label="Toggle 1" name="Toggle1"/>
+    <ui:Toggle label="Toggle 2" />
+    <ui:Toggle label="Toggle 3" />
+</ui:UXML>
