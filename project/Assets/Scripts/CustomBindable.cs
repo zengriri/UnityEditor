@@ -1,0 +1,42 @@
+using UnityEngine.UIElements;
+
+namespace Custom
+{
+    // ExampleField inherits from BaseField with the double type. Therefoe, the ExampleField's underlying value is a double.
+    public class CustomBindable : BaseField<double>
+    {
+        // We can provide the existing BaseFieldTraits class as a type parameter for UxmlFactory, and this means we
+        // don't need to define our own traits class or override its Init() method. We do, however, need to provide it
+        // However, you must provide the value type (double) and its attribute description type:
+        // (UxmlDoubleAttributeDescription).
+        public new class UxmlFactory :
+            UxmlFactory<CustomBindable, BaseFieldTraits<double, UxmlDoubleAttributeDescription>>
+        { }
+
+        Label m_Input;
+
+        // Default constructor is required for compatibility with UXML factory
+        public CustomBindable() : this(null)
+        {
+
+        }
+
+        // Main constructor accepts label parameter to mimic BaseField constructor.
+        // Second argument to base constructor is the input element, the one that displays the value this field is
+        // bound to.
+        public CustomBindable(string label) : base(label, new Label() { })
+        {
+            // This is the input element instantiated for the base constructor.
+            m_Input = this.Q<Label>(className: inputUssClassName);
+        }
+
+        // SetValueWithoutNotify needs to be overridden by calling the base version and then making a change to the
+        // underlying value be reflected in the input element.
+        public override void SetValueWithoutNotify(double newValue)
+        {
+            base.SetValueWithoutNotify(newValue);
+
+            m_Input.text = value.ToString("N");
+        }
+    }
+}

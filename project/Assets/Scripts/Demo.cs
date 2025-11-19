@@ -9,6 +9,7 @@ public class Demo : MonoBehaviour
 {
     void Start()
     {
-        Debug.Log("Demo started");
+        var uIDocument = GetComponent<UIDocument>();
+        var root = uIDocument.rootVisualElement;
     }
 }

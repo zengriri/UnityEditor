@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement style="flex-grow: 1; height: auto; opacity: 1;">
+        <ui:VisualElement name="img" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/AssetSource/Altas/c10224021.png?fileID=2800000&amp;guid=7758c1726e109484a875d274e7416b70&amp;type=3#c10224021&quot;); flex-basis: auto; width: 100px; height: 100px; align-items: center; justify-content: center; align-self: center; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; scale: 1 1; rotate: 0; transform-origin: center; transition-property: scale; transition-duration: 500ms; transition-timing-function: linear; transition-delay: 20s;" />
+        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+    </ui:VisualElement>
+</ui:UXML>

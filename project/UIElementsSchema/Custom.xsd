@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:editor="UnityEditor.UIElements" xmlns:engine="UnityEngine.UIElements" xmlns="UnityEditor.Overlays" elementFormDefault="qualified" targetNamespace="Custom" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="UnityEngine.UIElements.xsd" namespace="UnityEngine.UIElements" />
+  <xs:simpleType name="CustomAttributes_my-enum_Type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="First" />
+      <xs:enumeration value="Second" />
+      <xs:enumeration value="Third" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="CustomAttributesType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Position" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:attribute default="default_value" name="my-string" type="xs:string" use="optional" />
+        <xs:attribute default="2" name="my-int" type="xs:int" use="optional" />
+        <xs:attribute default="3.14" name="my-float" type="xs:float" use="optional" />
+        <xs:attribute default="1234567890" name="my-long" type="xs:long" use="optional" />
+        <xs:attribute default="false" name="my-bool" type="xs:boolean" use="optional" />
+        <xs:attribute default="RGBA(1.000, 1.000, 1.000, 1.000)" name="my-color" type="xs:string" use="optional" />
+        <xs:attribute default="First" name="my-enum" xmlns:q1="Custom" type="q1:CustomAttributes_my-enum_Type" use="optional" />
+        <xs:attribute default="null" name="my-type" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CustomAttributes" substitutionGroup="engine:VisualElement" xmlns:q2="Custom" type="q2:CustomAttributesType" />
+</xs:schema>

@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/AssetSource/uss/TransitionExample.uss?fileID=7433441132597879392&amp;guid=8ae27b6116f198045935b478cadf7d28&amp;type=3#TransitionExample" />
+    <ui:Label text="Hello World! With Style" class="custom-label" />
+</ui:UXML>
