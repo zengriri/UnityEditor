@@ -4,7 +4,7 @@ using UnityEngine.UIElements;
 
 public class CaptureEventsTestWindow : EditorWindow
 {
-    [MenuItem("Planets/Event/Capture Events Test Window")]
+    [MenuItem("Planets/Event/CaptureEvents")]
     public static void ShowExample()
     {
         var wnd = GetWindow<CaptureEventsTestWindow>();
