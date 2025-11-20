@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Template name="game_switch" src="project://database/Assets/AssetSource/uxml/game_switch.uxml?fileID=9197481963319205126&amp;guid=8994bcf8caa5bdf4f83e9148518b9049&amp;type=3#game_switch" />
+    <ui:Instance template="game_switch" name="game_switch" binding-path="useLocalServer" />
+    <ui:Instance template="game_switch" name="game_switch" binding-path="showDebugMenu" />
+    <ui:Instance template="game_switch" name="game_switch" binding-path="showFPSCounter" />
+</ui:UXML>

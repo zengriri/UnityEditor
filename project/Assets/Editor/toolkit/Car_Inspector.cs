@@ -28,8 +28,14 @@ public class Car_Inspector : Editor
 
         VisualElement inspectorFoldout = myInspector.Q("Default_Inspector");
 
+        var nameField = new TextField();
+        nameField.bindingPath = "playerName";  // 匹配 SerializedProperty "playerName"
+        nameField.Bind(serializedObject);
+        uxmlContent.Add(nameField);
+
         // Attach a default inspector to the foldout
         InspectorElement.FillDefaultInspector(inspectorFoldout, serializedObject, this);
+
 
         return myInspector;
     }

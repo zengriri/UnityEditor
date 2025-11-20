@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" ue="UnityEditor.UIElements">
+    <Style src="project://database/Assets/AssetSource/uss/tank_inspector_styles.uss?fileID=7433441132597879392&amp;guid=7cde1f757e94dd94e96b9b479442e455&amp;type=3#tank_inspector_styles" />
+    <ui:VisualElement name="row" class="container">
+        <ui:Label text="Tank Script - Custom Inspector" />
+        <uie:PropertyField binding-path="tankName" name="tank-name-field" />
+        <uie:PropertyField binding-path="tankSize" name="tank-size-field" />
+    </ui:VisualElement>
+</ui:UXML>
