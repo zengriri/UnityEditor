@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Planets/ScriptableObject/GameSwitches")]
+[CreateAssetMenu(menuName = "Planets/bind/GameSwitches")]
 public class GameSwitchesAsset : ScriptableObject
 {
     public GameSwitch useLocalServer;
